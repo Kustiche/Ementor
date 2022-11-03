@@ -1,0 +1,37 @@
+.header
+  position: absolute
+  right: 0
+  left: 0
+  padding-top: 40px
+
+  &__container
+    max-width: 680px
+
+.menu
+  display: flex
+  align-items: center
+  margin: 0
+  padding: 0
+  list-style: none
+
+  &__item
+    margin-right: 40px
+    &:last-child
+      margin-right: 0
+    &:hover .menu__link
+      &::after
+        width: 100%
+        left: 0
+
+  &__link
+    text-decoration: none
+    color: $martinique
+    position: relative
+    &::after
+      content: ""
+      position: absolute
+      width: 0
+      border-top: 2px dashed $yellow-orange
+      right: 0
+      top: 95%
+      transition: all .4s
