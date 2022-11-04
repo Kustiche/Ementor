@@ -4627,4 +4627,50 @@ body {
   line-height: 100%;
   background-color: #10B582;
 }
+
+.accession {
+  padding: 120px 0;
+  background-image: url(../img/accession/accession-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.accession__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.accession__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 510px;
+}
+.accession__title {
+  margin-bottom: 20px;
+  font-family: "Raleway-Medium";
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 120%;
+}
+.accession__text {
+  margin-bottom: 50px;
+  font-size: 14px;
+}
+.accession__link {
+  padding: 20px 55px;
+  font-family: "Raleway-Medium";
+  font-weight: 500;
+  line-height: 100%;
+}
 /*# sourceMappingURL=style.min.css.map */
