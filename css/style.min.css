@@ -382,7 +382,6 @@ body {
 .link {
   padding: 20px 45px;
   background-color: #FA9F42;
-  text-decoration: none;
   color: #FDFDFD;
   border-radius: 0px 20px;
   -webkit-transition: border-radius 0.4s;
@@ -4175,6 +4174,7 @@ body {
           align-items: flex-start;
 }
 .hero__inner--right {
+  padding-top: 30px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -4194,6 +4194,8 @@ body {
 }
 .hero__net {
   margin-bottom: 30px;
+  min-width: 22px;
+  min-height: 22px;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
   -o-transition: transform 0.4s;
@@ -4208,26 +4210,70 @@ body {
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
-.hero__icon {
-  width: 22px;
-  height: auto;
+.hero__net--facebook {
+  background-image: url(../img/hero/facebook.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero__net--vk {
+  background-image: url(../img/hero/vk.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero__net--instagram {
+  background-image: url(../img/hero/instagram.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .hero__img {
-  min-width: 270px;
-  min-height: 330px;
+  min-width: 240px;
+  min-height: 300px;
 }
 .hero__img--bottom {
-  background-image: url(../img/hero/decoration-bottom.png);
+  position: relative;
+  background-image: url(../img/hero/decoration-bottom.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border-radius: 0px 80px 0px 0px;
+}
+.hero__img--bottom::before {
+  position: absolute;
+  content: "";
+  width: 240px;
+  height: 300px;
+  bottom: 30px;
+  right: -30px;
+  background-image: url(../img/hero/dashed-bottom.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 80px 0px 0px;
 }
 .hero__img--top {
-  margin-bottom: 115px;
-  background-image: url(../img/hero/decoration-top.png);
+  position: relative;
+  margin-bottom: 65px;
+  background-image: url(../img/hero/decoration-top.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border-radius: 80px 0px 0px 0px;
+}
+.hero__img--top::before {
+  position: absolute;
+  content: "";
+  width: 240px;
+  height: 300px;
+  top: -30px;
+  left: -30px;
+  background-image: url(../img/hero/dashed-top.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 80px 0px 0px 0px;
 }
 .hero__content {
   display: -webkit-box;
