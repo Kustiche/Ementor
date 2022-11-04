@@ -27,6 +27,11 @@
     padding: 20px
     box-shadow: 5px 5px 30px rgba(101, 101, 101, 0.12)
     border-radius: 10px
+    transition: transform .4s
+    &:hover
+      transform: scale(.97)
+    &:hover .courses__text
+      color: $mountain-meadow
 
   &__inner-img
     margin-bottom: 15px
@@ -41,6 +46,7 @@
     font-family: "Raleway-Medium"
     font-weight: 500
     line-height: 100%
+    transition: color .4s
 
   &__link
     padding: 20px 75px
