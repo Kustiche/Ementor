@@ -1,7 +1,7 @@
 .teachers
   padding: 120px 0
 
-  &__top
+  &__characteristic
     display: flex
     justify-content: space-between
     align-items: center
@@ -26,7 +26,7 @@
     line-height: 120%
     text-align: center
 
-.bottom
+.curators
   display: flex
   justify-content: space-between
   align-items: center
@@ -59,13 +59,13 @@
     max-width: 570px
     gap: 30px
 
-  &__photo
+  &__photos
     display: flex
     flex-direction: column
     align-items: center
     max-width: 170px
 
-  &__inner-img
+  &__inner-photo
     margin-bottom: 15px
     max-width: 170px
     line-height: 0
@@ -73,6 +73,16 @@
   &__img
     width: 100%
     height: auto
+    &--bottom-left
+      border-radius: 0px 0px 0px 80px
+    &--bottom-right
+      border-radius: 0px 0px 80px 0px
+    &--top-left
+      border-radius: 80px 0px 0px 0px
+    &--top-right
+      border-radius: 0px 80px 0px 0px
+    &--sides
+      border-radius: 80px 0px
 
   &__excerpt
     font-size: 14px
