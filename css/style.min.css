@@ -4605,6 +4605,19 @@ body {
   -webkit-box-shadow: 5px 5px 30px rgba(101, 101, 101, 0.12);
           box-shadow: 5px 5px 30px rgba(101, 101, 101, 0.12);
   border-radius: 10px;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  -o-transition: transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+.courses__card:hover {
+  -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+          transform: scale(0.97);
+}
+.courses__card:hover .courses__text {
+  color: #10B582;
 }
 .courses__inner-img {
   margin-bottom: 15px;
@@ -4619,6 +4632,9 @@ body {
   font-family: "Raleway-Medium";
   font-weight: 500;
   line-height: 100%;
+  -webkit-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s;
 }
 .courses__link {
   padding: 20px 75px;
