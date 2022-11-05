@@ -1,0 +1,148 @@
+.footer
+  padding-top: 200px
+  position: relative
+  &::after
+    position: absolute
+    content: ""
+    width: 100%
+    border-top: 1px solid $martinique
+    opacity: 10%
+    left: 0
+    top: 120px
+  &::before
+    position: absolute
+    content: ""
+    width: 100%
+    border-top: 1px solid $martinique
+    opacity: 10%
+    left: 0
+    bottom: 75px
+
+  &__wrap
+    display: flex
+    flex-direction: column
+
+  &__content
+    display: flex
+    justify-content: space-between
+    margin-bottom: 50px
+
+  &__inner
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    max-width: 270px
+
+  &__text
+    margin-bottom: 45px
+    font-size: 14px
+    line-height: 130%
+
+  &__networks
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 115px
+    width: 100%
+
+  &__net
+    min-width: 22px
+    min-height: 22px
+    opacity: 30%
+    transition: opacity .4s
+    &--facebook
+      background-image: url(../img/footer/footer-facebook.png)
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+    &--vk
+      background-image: url(../img/footer/footer-vk.png)
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+    &--instagram
+      background-image: url(../img/footer/footer-instagram.png)
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+    &:hover
+      opacity: 100%
+
+  &__list
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+  &__item
+    margin-bottom: 20px
+    font-family: "Raleway-Medium", sans-serif
+    font-weight: 500
+    font-size: 16px
+    line-height: 100%
+    &:nth-child(1)
+      margin-bottom: 30px
+    &:hover .footer__link
+      &::after
+        width: 100%
+
+  &__link
+    position: relative
+    &::after
+      position: absolute
+      content: ""
+      width: 0
+      border-top: 2px solid $martinique
+      top: 95%
+      left: 50%
+      transition: all .4s
+      transform: translateX(-50%)
+
+  &__questions
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    max-width: 180px
+
+  &__excerpt
+    margin-bottom: 30px
+    font-family: "Raleway-Medium", sans-serif
+    font-weight: 500
+    line-height: 100%
+
+  &__mail
+    line-height: 130%
+
+  &__link-mail
+    position: relative
+    &::after
+      position: absolute
+      content: ""
+      width: 100%
+      border-top: 1px solid $martinique
+      top: 95%
+      left: 50%
+      transition: width .4s
+      transform: translateX(-50%)
+    &:hover
+      &::after
+        width: 0
+
+.policy
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 30px 0
+
+  &__excerpt
+    font-size: 14px
+    line-height: 100%
+
+  &__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 450px
+    width: 100%
+
+.logo
+  margin-bottom: 25px
