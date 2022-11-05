@@ -4179,55 +4179,6 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-.hero__networks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-bottom: 105px;
-}
-.hero__net {
-  margin-bottom: 30px;
-  min-width: 22px;
-  min-height: 22px;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  -o-transition: transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
-}
-.hero__net:last-child {
-  margin-bottom: 0;
-}
-.hero__net:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
-}
-.hero__net--facebook {
-  background-image: url(../img/hero/hero-facebook.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.hero__net--vk {
-  background-image: url(../img/hero/hero-vk.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.hero__net--instagram {
-  background-image: url(../img/hero/hero-instagram.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 .hero__img {
   min-width: 240px;
   min-height: 300px;
@@ -4338,6 +4289,27 @@ body {
 }
 .hero__scroll:hover::before {
   background-image: url(../img/hero/arrow-orange.png);
+}
+
+.networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 105px;
+}
+.networks__net {
+  margin-bottom: 30px;
+  line-height: 0;
+}
+.networks__net:last-child {
+  margin-bottom: 0;
 }
 
 .logo {
