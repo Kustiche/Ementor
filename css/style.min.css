@@ -4276,7 +4276,10 @@ body {
   height: 17px;
   top: -25%;
   left: 40%;
-  background-image: url(../img/hero/arrow-white.png);
+  background-image: url(../img/svg/arrow-white.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -4288,7 +4291,7 @@ body {
   color: #FA9F42;
 }
 .hero__scroll:hover::before {
-  background-image: url(../img/hero/arrow-orange.png);
+  background-image: url(../img/svg/arrow-orange.svg);
 }
 
 .networks {
@@ -4310,6 +4313,17 @@ body {
 }
 .networks__net:last-child {
   margin-bottom: 0;
+}
+.networks__icon {
+  width: 22px;
+  height: 22px;
+  fill: #FDFDFD;
+  -webkit-transition: fill 0.4s;
+  -o-transition: fill 0.4s;
+  transition: fill 0.4s;
+}
+.networks__icon:hover {
+  fill: #FA9F42;
 }
 
 .logo {
