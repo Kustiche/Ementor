@@ -18,6 +18,23 @@
     padding-top: 30px
     align-items: flex-end
 
+  &__networks
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin-bottom: 105px
+
+  &__net
+    margin-bottom: 30px
+    &:last-child
+      margin-bottom: 0
+
+  &__icon
+    fill: $white
+    transition: fill .4s
+    &:hover
+      fill: $yellow-orange
+
   &__img
     min-width: 240px
     min-height: 300px
@@ -109,23 +126,3 @@
       color: $yellow-orange
       &::before
         background-image: url(../img/svg/arrow-orange.svg)
-
-.networks
-  display: flex
-  flex-direction: column
-  align-items: flex-start
-  margin-bottom: 105px
-
-  &__net
-    margin-bottom: 30px
-    line-height: 0
-    &:last-child
-      margin-bottom: 0
-
-  &__icon
-    width: 22px
-    height: 22px
-    fill: $white
-    transition: fill .4s
-    &:hover
-      fill: $yellow-orange
