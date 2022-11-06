@@ -1,0 +1,47 @@
+.design-knowledge
+  padding: 120px 0
+  background-color: $mountain-meadow
+
+  &__wrap
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+
+  &__content
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    max-width: 540px
+
+  &__title
+    margin-bottom: 20px
+    font-family: "Raleway-Medium"
+    font-weight: 500
+    font-size: 58px
+    line-height: 120%
+    color: $white
+
+  &__text
+    margin-bottom: 50px
+    color: $white
+
+  &__link
+    padding: 20px 70px
+
+  &__img
+    width: 540px
+    height: 286px
+    background-image: url(../img/design-knowledge/design-knowledge-decoration.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    position: relative
+    border-radius: 120px 0px 0px 0px
+    &::before
+      position: absolute
+      content: ""
+      width: 540px
+      height: 286px
+      bottom: 30px
+      left: -30px
+      background-image: url(../img/design-knowledge/design-knowledge-dash.png)
