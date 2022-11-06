@@ -4929,6 +4929,9 @@ body {
   font-size: 14px;
   line-height: 100%;
   position: relative;
+  -webkit-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s;
 }
 .design-header__excerpt:nth-child(5) {
   opacity: 0.5;
@@ -4948,7 +4951,7 @@ body {
   stroke-linejoin: round;
 }
 
-.menu__link {
+.menu__link--gray {
   color: #353A5A;
 }
 /*# sourceMappingURL=style.min.css.map */
