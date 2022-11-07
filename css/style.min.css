@@ -4312,6 +4312,7 @@ body {
   -o-transition: color 0.4s;
   transition: color 0.4s;
   position: relative;
+  scroll-behavior: smooth;
 }
 .hero__scroll:hover {
   color: #FA9F42;
@@ -4604,9 +4605,8 @@ body {
   width: 100%;
   height: auto;
 }
-.courses__text {
-  font-family: "Raleway-Medium";
-  font-weight: 500;
+.courses__heading {
+  font-size: 16px;
   line-height: 100%;
   -webkit-transition: color 0.4s;
   -o-transition: color 0.4s;
