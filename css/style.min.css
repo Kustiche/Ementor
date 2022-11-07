@@ -373,6 +373,10 @@ body {
 
 .title {
   margin: 0;
+  font-family: "Raleway-Medium";
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 100%;
 }
 
 .text {
@@ -474,9 +478,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.characteristic__inner--wide {
-  max-width: 270px;
 }
 .characteristic__heading {
   margin-bottom: 15px;
@@ -4282,7 +4283,7 @@ body {
   background-size: cover;
   border-radius: 0px 80px 0px 0px;
 }
-.hero__img--bottom::before {
+.hero__img::before {
   position: absolute;
   content: "";
   width: 240px;
@@ -4945,8 +4946,16 @@ body {
 .design-header__excerpt:hover {
   color: #FA9F42;
 }
-.design-header__excerpt:last-child:hover {
-  color: inherit;
+.design-header__excerpt::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 9px;
+  -webkit-clip-path: polygon(60% 50%, 50% 0, 100% 50%, 50% 100%);
+          clip-path: polygon(60% 50%, 50% 0, 100% 50%, 50% 100%);
+  background-color: #000000;
+  top: 100%;
+  left: 30%;
 }
 .design-header__arrow {
   width: 4px;
@@ -4963,7 +4972,7 @@ body {
 
 .design-hero {
   padding-top: 30px;
-  padding-bottom: 120px;
+  padding-bottom: 40px;
 }
 .design-hero__wrap {
   display: -webkit-box;
@@ -4985,7 +4994,6 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-bottom: 80px;
 }
 .design-hero__title {
   margin-bottom: 40px;
@@ -5083,5 +5091,40 @@ body {
   bottom: 30px;
   left: -30px;
   background-image: url(../img/design-knowledge/design-knowledge-dash.png);
+}
+
+.design-numbers {
+  padding-top: 40px;
+  padding-bottom: 120px;
+}
+.design-numbers__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.design-numbers__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 270px;
+}
+.design-numbers__title {
+  margin-bottom: 15px;
+  color: #10B582;
+}
+.design-numbers__text {
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
 }
 /*# sourceMappingURL=style.min.css.map */
