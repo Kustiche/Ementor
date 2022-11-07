@@ -60,3 +60,40 @@
 .icon
   width: 22px
   height: 22px
+
+.bread-crumbs
+  display: flex
+  justify-content: space-between
+  align-items: center
+  max-width: 255px
+  width: 100%
+
+  &__link
+    font-size: 14px
+    line-height: 100%
+    position: relative
+    transition: color .4s
+    &::after
+      position: absolute
+      content: ""
+      width: 6px
+      height: 9px
+      clip-path: polygon(60% 50%, 50% 0, 100% 50%, 50% 100%)
+      background-color: $yellow-orange
+      top: 25%
+      right: -40%
+      transition: background-color .4s
+    &:hover
+      color: $yellow-orange
+      &::after
+        background-color: $yellow-orange
+    &:last-child
+      opacity: 0.5
+      &:hover
+        color: inherit
+      &::after
+        display: none
+
+  &__excerpt
+    font-size: 14px
+    line-height: 100%
