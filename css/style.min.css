@@ -4649,6 +4649,9 @@ body {
   background-position: center;
   background-size: cover;
 }
+.accession--background {
+  background-image: url(../img/design-discount/design-discount-bg.jpg);
+}
 .accession__container {
   display: -webkit-box;
   display: -ms-flexbox;
