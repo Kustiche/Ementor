@@ -454,47 +454,6 @@ body {
   height: 22px;
 }
 
-.characteristic {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.characteristic--indent {
-  margin-bottom: 120px;
-}
-.characteristic__inner {
-  max-width: 225px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.characteristic__heading {
-  margin-bottom: 15px;
-  font-family: "Raleway-Medium";
-  font-weight: 500;
-  font-size: 58px;
-  line-height: 100%;
-  color: #10B582;
-}
-.characteristic__desc {
-  font-size: 14px;
-  line-height: 120%;
-  text-align: center;
-}
-
 /*!
  * animate.css - https://animate.style/
  * Version - 4.1.1
@@ -4378,8 +4337,51 @@ body {
   left: 25%;
 }
 
+.numbers {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+.numbers__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.numbers__card {
+  max-width: 225px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.numbers__title {
+  margin-bottom: 15px;
+  font-family: "Raleway-Medium";
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 100%;
+  color: #10B582;
+}
+.numbers__text {
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+}
+
 .teachers {
-  padding: 120px 0;
+  padding-top: 60px;
+  padding-bottom: 120px;
 }
 
 .curators {
