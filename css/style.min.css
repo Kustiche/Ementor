@@ -4273,52 +4273,46 @@ body {
 .hero__icon:hover {
   fill: #FA9F42;
 }
-.hero__img {
+.hero__photo {
+  position: relative;
+}
+.hero__photo--top {
+  margin-bottom: 70px;
+}
+.hero__photo-decoration {
+  position: relative;
   min-width: 240px;
   min-height: 300px;
-}
-.hero__img--bottom {
-  position: relative;
-  background-image: url(../img/hero/decoration-bottom.jpg);
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.hero__photo-decoration--bottom {
+  background-image: url(../img/hero/decoration-bottom.jpg);
   border-radius: 0px 80px 0px 0px;
 }
-.hero__img::before {
+.hero__photo-decoration--top {
+  background-image: url(../img/hero/decoration-top.jpg);
+  border-radius: 80px 0px 0px 0px;
+}
+.hero__photo-dashed {
+  min-width: 240px;
+  min-height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: absolute;
-  content: "";
-  width: 240px;
-  height: 300px;
+}
+.hero__photo-dashed--bottom {
+  background-image: url(../img/svg/hero-dashed-bottom.svg);
   bottom: 30px;
   right: -30px;
-  background-image: url(../img/hero/dashed-bottom.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 0px 80px 0px 0px;
 }
-.hero__img--top {
-  position: relative;
-  margin-bottom: 65px;
-  background-image: url(../img/hero/decoration-top.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 80px 0px 0px 0px;
-}
-.hero__img--top::before {
-  position: absolute;
-  content: "";
-  width: 240px;
-  height: 300px;
-  top: -30px;
+.hero__photo-dashed--top {
+  background-image: url(../img/svg/hero-dashed-top.svg);
+  bottom: 30px;
   left: -30px;
-  background-image: url(../img/hero/dashed-top.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 80px 0px 0px 0px;
 }
 .hero__content {
   display: -webkit-box;
@@ -4358,34 +4352,30 @@ body {
   -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
           transform: rotate(-180deg);
-  position: relative;
   -webkit-transition: color 0.4s;
   -o-transition: color 0.4s;
   transition: color 0.4s;
-}
-.hero__scroll::before {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 17px;
-  top: -25%;
-  left: 40%;
-  background-image: url(../img/svg/arrow-white.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition: background-image 0.4s;
-  -o-transition: background-image 0.4s;
-  transition: background-image 0.4s;
+  position: relative;
 }
 .hero__scroll:hover {
   color: #FA9F42;
 }
-.hero__scroll:hover::before {
-  background-image: url(../img/svg/arrow-orange.svg);
+.hero__scroll:hover .hero__arrow {
+  stroke: #FA9F42;
+}
+.hero__arrow {
+  position: absolute;
+  width: 10px;
+  height: 18px;
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  stroke: #FDFDFD;
+  -webkit-transition: stroke 0.4s;
+  -o-transition: stroke 0.4s;
+  transition: stroke 0.4s;
+  top: -25%;
+  left: 25%;
 }
 
 .teachers {
