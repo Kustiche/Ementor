@@ -4393,6 +4393,7 @@ body {
 .numbers {
   padding-top: 120px;
   padding-bottom: 60px;
+  scroll-behavior: smooth;
 }
 .numbers__wrap {
   display: -webkit-box;
@@ -5189,5 +5190,91 @@ body {
 }
 .design-skills__link {
   background-color: #10B582;
+}
+
+.design-questions {
+  padding-top: 120px;
+}
+.design-questions__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.design-questions__title {
+  margin-bottom: 60px;
+}
+
+.spollers {
+  max-width: 830px;
+  width: 100%;
+}
+.spollers__item {
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: transparent;
+  -webkit-box-shadow: 5px 5px 30px rgba(101, 101, 101, 0.12);
+          box-shadow: 5px 5px 30px rgba(101, 101, 101, 0.12);
+  border-radius: 10px;
+  position: relative;
+}
+.spollers__item:last-child {
+  margin-bottom: 0;
+}
+.spollers__item::after {
+  position: absolute;
+  content: "";
+  width: 33px;
+  height: 33px;
+  border: 1px dashed #10B582;
+  border-radius: 50%;
+  right: 21px;
+  top: 27px;
+}
+.spollers__title {
+  font-family: "Raleway-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 130%;
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  color: #353A5A;
+}
+.spollers__text {
+  padding: 5px 0 10px 10px;
+  line-height: 130%;
+  color: #353A5A;
+}
+.spollers.init .spollers__title::before, .spollers.init .spollers__title::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 23px;
+  width: 15px;
+  height: 2px;
+  background-color: #10B582;
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  -o-transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+}
+.spollers.init .spollers__title::after {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.spollers.init .spollers__title.active::after {
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 /*# sourceMappingURL=style.min.css.map */
